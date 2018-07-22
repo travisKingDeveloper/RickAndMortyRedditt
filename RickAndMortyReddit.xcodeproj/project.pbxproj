@@ -13,8 +13,8 @@
 		1099D10820FC687700B21F95 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099D10720FC687700B21F95 /* Post.swift */; };
 		1099D11320FC6D8F00B21F95 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099D11220FC6D8F00B21F95 /* Alamofire.framework */; };
 		1099D11520FC6D9300B21F95 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099D11420FC6D9300B21F95 /* Moya.framework */; };
-		1099D11720FC6D9800B21F95 /* Pods_RickAndMortyReddit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099D11620FC6D9800B21F95 /* Pods_RickAndMortyReddit.framework */; };
 		1099D11E20FC6E2900B21F95 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099D11D20FC6E2900B21F95 /* Result.framework */; };
+		10BFD9842104E21100FCCA9E /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		10E8470520FC2EE500E4CFC4 /* FetchPostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8470420FC2EE500E4CFC4 /* FetchPostsRepository.swift */; };
 		10E8470820FC2F1E00E4CFC4 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8470720FC2F1E00E4CFC4 /* PostEntity.swift */; };
 		10E8470B20FC2FA200E4CFC4 /* RedditAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E8470A20FC2FA200E4CFC4 /* RedditAPI.swift */; };
@@ -27,7 +27,8 @@
 		10EAC28D20FBD20C00546C5C /* OverviewPostOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EAC28C20FBD20C00546C5C /* OverviewPostOverviewTableViewCell.swift */; };
 		10EAC28F20FBD87B00546C5C /* OverviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EAC28E20FBD87B00546C5C /* OverviewTableViewController.swift */; };
 		10EAC29320FBD8F200546C5C /* PostOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EAC29220FBD8F200546C5C /* PostOverviewViewModel.swift */; };
-		E124C74C9E68DBD67E4FF257 /* Pods_RickAndMortyRedditTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F00986BA299D1085F3FE74 /* Pods_RickAndMortyRedditTests.framework */; };
+		14096F54540A54F28139608E /* Pods_RickAndMortyRedditTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669ED1026EE381DDDF01D355 /* Pods_RickAndMortyRedditTests.framework */; };
+		E24FCFDC8BD1C2767E1FCF2E /* Pods_RickAndMortyReddit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA089F97D4606B18E445A61E /* Pods_RickAndMortyReddit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		10BFD9852104E21100FCCA9E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				10BFD9842104E21100FCCA9E /* BuildFile in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1023FF3220FC0503001B0206 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavoritesTableViewController.swift; path = RickAndMortyReddit/Controllers/Favorites/FavoritesTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		1023FF3820FC136D001B0206 /* FavoritePostOverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePostOverviewTableViewCell.swift; sourceTree = "<group>"; };
@@ -51,7 +66,6 @@
 		1099D10720FC687700B21F95 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1099D11220FC6D8F00B21F95 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1099D11420FC6D9300B21F95 /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1099D11620FC6D9800B21F95 /* Pods_RickAndMortyReddit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_RickAndMortyReddit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1099D11820FC6D9D00B21F95 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1099D11D20FC6E2900B21F95 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E8470420FC2EE500E4CFC4 /* FetchPostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsRepository.swift; sourceTree = "<group>"; };
@@ -73,12 +87,12 @@
 		10EAC28C20FBD20C00546C5C /* OverviewPostOverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewPostOverviewTableViewCell.swift; sourceTree = "<group>"; };
 		10EAC28E20FBD87B00546C5C /* OverviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewTableViewController.swift; sourceTree = "<group>"; };
 		10EAC29220FBD8F200546C5C /* PostOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostOverviewViewModel.swift; sourceTree = "<group>"; };
-		16B28D86E0E9F83C0770A0D5 /* Pods-RickAndMortyReddit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyReddit.release.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyReddit/Pods-RickAndMortyReddit.release.xcconfig"; sourceTree = "<group>"; };
-		1D6C99634BA184A19688FC54 /* Pods-RickAndMortyReddit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyReddit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyReddit/Pods-RickAndMortyReddit.debug.xcconfig"; sourceTree = "<group>"; };
-		479B35883AE136A570CB4733 /* Pods_RickAndMortyReddit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickAndMortyReddit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59F00986BA299D1085F3FE74 /* Pods_RickAndMortyRedditTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickAndMortyRedditTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		986CC8FF9F0132A9E3D4D14E /* Pods-RickAndMortyRedditTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyRedditTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyRedditTests/Pods-RickAndMortyRedditTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E06C6A6F569F8012412946C3 /* Pods-RickAndMortyRedditTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyRedditTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyRedditTests/Pods-RickAndMortyRedditTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FAC1980E8821BB63CCB720F /* Pods-RickAndMortyReddit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyReddit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyReddit/Pods-RickAndMortyReddit.debug.xcconfig"; sourceTree = "<group>"; };
+		669ED1026EE381DDDF01D355 /* Pods_RickAndMortyRedditTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickAndMortyRedditTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4F8085EB5EF725474DBD2F /* Pods-RickAndMortyRedditTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyRedditTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyRedditTests/Pods-RickAndMortyRedditTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA089F97D4606B18E445A61E /* Pods_RickAndMortyReddit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickAndMortyReddit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60EBB7DA5F7EF2CDCDC5328 /* Pods-RickAndMortyRedditTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyRedditTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyRedditTests/Pods-RickAndMortyRedditTests.release.xcconfig"; sourceTree = "<group>"; };
+		D0074208EF30FEAF58F5B32D /* Pods-RickAndMortyReddit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyReddit.release.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyReddit/Pods-RickAndMortyReddit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +101,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1099D11E20FC6E2900B21F95 /* Result.framework in Frameworks */,
-				1099D11720FC6D9800B21F95 /* Pods_RickAndMortyReddit.framework in Frameworks */,
 				1099D11520FC6D9300B21F95 /* Moya.framework in Frameworks */,
 				1099D11320FC6D8F00B21F95 /* Alamofire.framework in Frameworks */,
+				E24FCFDC8BD1C2767E1FCF2E /* Pods_RickAndMortyReddit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E124C74C9E68DBD67E4FF257 /* Pods_RickAndMortyRedditTests.framework in Frameworks */,
+				14096F54540A54F28139608E /* Pods_RickAndMortyRedditTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +224,7 @@
 				10EAC27E20FBC85800546C5C /* RickAndMortyRedditTests */,
 				10EAC26820FBC85600546C5C /* Products */,
 				B9F89B3D9A33973209165C0A /* Frameworks */,
-				26004CA6C967A79748C2805F /* Pods */,
+				5A471F3E0FF60014B5107E86 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -268,13 +282,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		26004CA6C967A79748C2805F /* Pods */ = {
+		5A471F3E0FF60014B5107E86 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1D6C99634BA184A19688FC54 /* Pods-RickAndMortyReddit.debug.xcconfig */,
-				16B28D86E0E9F83C0770A0D5 /* Pods-RickAndMortyReddit.release.xcconfig */,
-				986CC8FF9F0132A9E3D4D14E /* Pods-RickAndMortyRedditTests.debug.xcconfig */,
-				E06C6A6F569F8012412946C3 /* Pods-RickAndMortyRedditTests.release.xcconfig */,
+				5FAC1980E8821BB63CCB720F /* Pods-RickAndMortyReddit.debug.xcconfig */,
+				D0074208EF30FEAF58F5B32D /* Pods-RickAndMortyReddit.release.xcconfig */,
+				7D4F8085EB5EF725474DBD2F /* Pods-RickAndMortyRedditTests.debug.xcconfig */,
+				C60EBB7DA5F7EF2CDCDC5328 /* Pods-RickAndMortyRedditTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -284,7 +298,6 @@
 			children = (
 				1099D11D20FC6E2900B21F95 /* Result.framework */,
 				1099D11820FC6D9D00B21F95 /* Result.framework */,
-				1099D11620FC6D9800B21F95 /* Pods_RickAndMortyReddit.framework */,
 				1099D11420FC6D9300B21F95 /* Moya.framework */,
 				1099D11220FC6D8F00B21F95 /* Alamofire.framework */,
 				1099D10120FC55FD00B21F95 /* Result.framework */,
@@ -294,8 +307,8 @@
 				10E8471220FC365600E4CFC4 /* Result.framework */,
 				10E8471020FC365100E4CFC4 /* Alamofire.framework */,
 				10E8470E20FC364000E4CFC4 /* Moya.framework */,
-				479B35883AE136A570CB4733 /* Pods_RickAndMortyReddit.framework */,
-				59F00986BA299D1085F3FE74 /* Pods_RickAndMortyRedditTests.framework */,
+				AA089F97D4606B18E445A61E /* Pods_RickAndMortyReddit.framework */,
+				669ED1026EE381DDDF01D355 /* Pods_RickAndMortyRedditTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -307,10 +320,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10EAC28420FBC85800546C5C /* Build configuration list for PBXNativeTarget "RickAndMortyReddit" */;
 			buildPhases = (
-				73A4EAD4F7AF1E6C45E2BC97 /* [CP] Check Pods Manifest.lock */,
+				FB50905EFDB8499475BB420D /* [CP] Check Pods Manifest.lock */,
 				10EAC26320FBC85600546C5C /* Sources */,
 				10EAC26420FBC85600546C5C /* Frameworks */,
 				10EAC26520FBC85600546C5C /* Resources */,
+				10BFD9852104E21100FCCA9E /* Embed Frameworks */,
+				1214978F14D92C256D4CA9C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,11 +340,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10EAC28720FBC85800546C5C /* Build configuration list for PBXNativeTarget "RickAndMortyRedditTests" */;
 			buildPhases = (
-				30D3CE619BE507C4BBD9C580 /* [CP] Check Pods Manifest.lock */,
+				2D08B628BBDD64F045436BFF /* [CP] Check Pods Manifest.lock */,
 				10EAC27720FBC85800546C5C /* Sources */,
 				10EAC27820FBC85800546C5C /* Frameworks */,
 				10EAC27920FBC85800546C5C /* Resources */,
-				4EF1F1EC6E3CB64A8387AB20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,7 +414,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30D3CE619BE507C4BBD9C580 /* [CP] Check Pods Manifest.lock */ = {
+		1214978F14D92C256D4CA9C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RickAndMortyReddit/Pods-RickAndMortyReddit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RickAndMortyReddit/Pods-RickAndMortyReddit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D08B628BBDD64F045436BFF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,29 +454,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4EF1F1EC6E3CB64A8387AB20 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RickAndMortyRedditTests/Pods-RickAndMortyRedditTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RickAndMortyRedditTests/Pods-RickAndMortyRedditTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		73A4EAD4F7AF1E6C45E2BC97 /* [CP] Check Pods Manifest.lock */ = {
+		FB50905EFDB8499475BB420D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -634,7 +648,7 @@
 		};
 		10EAC28520FBC85800546C5C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D6C99634BA184A19688FC54 /* Pods-RickAndMortyReddit.debug.xcconfig */;
+			baseConfigurationReference = 5FAC1980E8821BB63CCB720F /* Pods-RickAndMortyReddit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -657,7 +671,7 @@
 		};
 		10EAC28620FBC85800546C5C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16B28D86E0E9F83C0770A0D5 /* Pods-RickAndMortyReddit.release.xcconfig */;
+			baseConfigurationReference = D0074208EF30FEAF58F5B32D /* Pods-RickAndMortyReddit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -680,7 +694,7 @@
 		};
 		10EAC28820FBC85800546C5C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 986CC8FF9F0132A9E3D4D14E /* Pods-RickAndMortyRedditTests.debug.xcconfig */;
+			baseConfigurationReference = 7D4F8085EB5EF725474DBD2F /* Pods-RickAndMortyRedditTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -701,7 +715,7 @@
 		};
 		10EAC28920FBC85800546C5C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E06C6A6F569F8012412946C3 /* Pods-RickAndMortyRedditTests.release.xcconfig */;
+			baseConfigurationReference = C60EBB7DA5F7EF2CDCDC5328 /* Pods-RickAndMortyRedditTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
